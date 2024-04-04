@@ -19,7 +19,13 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 ***********************************************************************/
 
 const arrowMyMap = (array, cb) => {
+    let newArr = []
 
+    array.forEach((num) => {
+      newArr.push(cb(num))
+      console.log(newArr)
+    })
+    return newArr
 }
 
 let result1 = arrowMyMap([100, 25, 81, 64], Math.sqrt);
