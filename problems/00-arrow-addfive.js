@@ -6,6 +6,7 @@ Write a function `addFive` that accepts a number and will return that number
 plus 5. Write this function on a single line, and utilize a fat arrow function's
 ability to implicitly return by leaving out your own return statement.
 
+// test comment
 
 Examples:
 let result1 = addFive(0); // returns 5
@@ -15,7 +16,7 @@ let result3 = addFive(37); // returns 42
 
 ***********************************************************************/
 
-// Your code here 
+// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
