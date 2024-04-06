@@ -16,8 +16,28 @@ let sandwich2 = sandwichMaker(); // => returns a function
 sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
+let string = '';
 
-// Your code here 
+let sandwichMaker = () => {
+  string = 'One sandwich with tomato';        // no spaces after 'tomato'
+  return function(str) {
+      string = string.concat(` and ${str}`);  // one space in front of 'and str'
+      return string;
+  };
+}
+
+let sandwich = sandwichMaker();
+console.log(sandwich); // => returns a function
+
+console.log(sandwich("spinach")); // => "One sandwich with tomato and spinach"
+console.log(sandwich("jelly")); // => "One sandwich with tomato and spinach and jelly"
+console.log(sandwich("bread")); // => "One sandwich with tomato and spinach and jelly and bread"
+
+// Another Sandwich:
+let sandwich2 = sandwichMaker(); // => returns a function
+console.log(sandwich2("pb")); // => "One sandwich with tomato and pb"
+console.log(sandwich2("banana"));
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
